@@ -26,4 +26,4 @@ Verwende npm, um die Bibliothek zu installieren:
 
 ```bash
 npm install project_c
-
+```
