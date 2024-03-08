@@ -6,7 +6,7 @@ In this project we create a small JavaScript-Library API that will show video ga
 ## Content
     - create.php
         - Allow the user to create an account for the website.
-        - Allow to add a new game into the database.(administrator)
+        - Allow to add a new game into the database.(administrator only)
         - functionType & Payload
         - example:
     - read.php
@@ -18,12 +18,12 @@ In this project we create a small JavaScript-Library API that will show video ga
     - delete.php
         - Allow an administrator to delete a game, publisher or developer.
         - Allow the user to delete his account.
-        - 
+        - functionDelete
         - example:
     - update.php
         - Allow to change the user's personal information if he want to do it. 
         - Allow the administrator to change information from a game, a publisher or an developer.
-        - 
+        - functionUpdate
         - example:
 
 ## Installing
