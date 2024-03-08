@@ -20,10 +20,4 @@ Nach der veröffentlichung des Projekts kommt die Roadmap hinzu
 ## Kontakt
 Bei Fragen oder Anregungen kontaktiere mich unter stefr407@school.lu.
 
-## Installation
 
-Verwende npm, um die Bibliothek zu installieren:
-
-```bash
-npm install project_c
-```
