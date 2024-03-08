@@ -1,28 +1,38 @@
 CREATE TABLE tblPublisher (
-    idPubId INT PRIMARY KEY AUTO_INCREMENT,
+    idPubblisherNumber INT PRIMARY KEY AUTO_INCREMENT,
     dtName VARCHAR(40),
-    dtGrundjahr INT,
-    dtHauptsitz VARCHAR(50),
-    dtWebseite VARCHAR(255),
-    dtDevelopper VARCHAR(40)
+    dtFoundingDate DATE,
+    dtHeadquarters VARCHAR(50),
+    dtWebsite VARCHAR(255),
 );
-
+CREATE TABLE tblDevelopper (
+    idDevelopperNumber INT PRIMARY KEY AUTO_INCREMENT,
+    dtName VARCHAR(40),
+    dtFoundingDate DATE,
+    dtHeadquarters VARCHAR(50),
+    dtWebsite VARCHAR(255),
+);
 CREATE TABLE tblGameInfo (
-    idGameId INT PRIMARY KEY AUTO_INCREMENT, 
-    dtTitel VARCHAR(50),
+    idGameNumber INT PRIMARY KEY AUTO_INCREMENT, 
+    dtGameName VARCHAR(50),
     dtGenre VARCHAR(50),
-    dtVeröffentlichungsdatum DATE,
     dtPGI VARCHAR(5),
     dtReleasedate DATE,
-    fiPubId INT,
-    FOREIGN KEY(fiPubId) REFERENCES tblPublisher(idPubId)
+    fiPublisherNumber INT,
+    FOREIGN KEY(fiPublisherNumber) REFERENCES tblPublisher(idPublisherNumber)
 );
 
-
-CREATE TABLE tblUSER (
-    IdUser INT PRIMARY KEY AUTO_INCREMENT,
-    dtVorname VARCHAR(30),
-    dtNachname VARCHAR(30),
+CREATE TABLE tblUser (
+    idUserName INT PRIMARY KEY AUTO_INCREMENT,
+    dtFirstName VARCHAR(30),
+    dtLastName VARCHAR(30),
     dtFavGame VARCHAR(30),
     dtPasswort VARCHAR(255)
+);
+
+CREATE TABLE tblDeveloping (
+    fiDeveloperNumber INT,
+    fiGameNumber INT,
+    FOREIGN KEY(fiDeveloperNumber) REFERENCES tblDevelopper(idDevelopperNumber)
+    FOREIGN KEY(fiGameNumber) REFERENCES tblGameInfo(idGameNumber)
 );
