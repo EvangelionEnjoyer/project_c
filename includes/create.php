@@ -1,5 +1,5 @@
 <?php
-    //require_once ""; // database_credential
+    //require_once "db_credential.php"; // database_credential
     // 
     // Payload == Data you want to insert as JSON
 
