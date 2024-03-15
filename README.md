@@ -1,6 +1,6 @@
 # project_c
 
-# JavaScript-Bibliothek
+## JavaScript-Bibliothek
 
 Unsere JavaScript-Bibliothek beinhaltet Informationen von Video-Spielen und deren Publischer. 
 
