@@ -16,15 +16,14 @@ Lizenzen haben wir keine.
 Version 1.0.0 unveröffentlicht
 Nach der veröffentlichung des Projekts kommt die Roadmap hinzu.
 
-
+## Authors
+Jean Walers
+Jean-Luc Ntwari
+Luca Formica
+Franjo Stefanetti
 
 ## Kontakt
 Bei Fragen oder Anregungen kontaktiere mich unter stefr407@school.lu.
 
 ## Installation
-
-Verwende npm, um die Bibliothek zu installieren:
-
-```bash
-npm install project_c
-```
+ Es müssen alle .php Dateien heruntergeladen werden und auf einen Webserver installiert werden.
