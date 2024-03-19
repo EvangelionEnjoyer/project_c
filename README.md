@@ -16,16 +16,12 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <ul>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
+    <li><a href="#built-with">Built With</a></li>
+    <li><a href="#installation">Installation</a></li>
+    <ul>
+        <li><a href="#Hosting the Server">Hosting the Server</a></li>
+        <li><a href="#Setting up a Database">Setting up a Database</a></li>
+    </ul>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -118,6 +114,7 @@ To host the website you can use Apache or XAMPP.
 * to host the server with XAMPP use the following guide:
     * XAMPP: https://www.apachefriends.org/hosting.html
 
+### Setting up a Database
 
 * to set up the Database you can follow these guides
 
