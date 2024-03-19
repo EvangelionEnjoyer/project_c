@@ -1,16 +1,16 @@
 CREATE TABLE tblPublisher (
-    idPubblisherNumber INT PRIMARY KEY AUTO_INCREMENT,
+    idPublisherNumber INT PRIMARY KEY AUTO_INCREMENT,
     dtName VARCHAR(40),
     dtFoundingDate DATE,
     dtHeadquarters VARCHAR(50),
-    dtWebsite VARCHAR(255),
+    dtWebsite VARCHAR(255)
 );
 CREATE TABLE tblDevelopper (
     idDevelopperNumber INT PRIMARY KEY AUTO_INCREMENT,
     dtName VARCHAR(40),
     dtFoundingDate DATE,
     dtHeadquarters VARCHAR(50),
-    dtWebsite VARCHAR(255),
+    dtWebsite VARCHAR(255)
 );
 CREATE TABLE tblGameInfo (
     idGameNumber INT PRIMARY KEY AUTO_INCREMENT, 
@@ -33,6 +33,6 @@ CREATE TABLE tblUser (
 CREATE TABLE tblDeveloping (
     fiDeveloperNumber INT,
     fiGameNumber INT,
-    FOREIGN KEY(fiDeveloperNumber) REFERENCES tblDevelopper(idDevelopperNumber)
+    FOREIGN KEY(fiDeveloperNumber) REFERENCES tblDevelopper(idDevelopperNumber),
     FOREIGN KEY(fiGameNumber) REFERENCES tblGameInfo(idGameNumber)
 );
